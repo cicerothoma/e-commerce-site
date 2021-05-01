@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+.country,
+.socials,
+.tel {
+  display: flex;
+  align-items: center;
+}
+
+.socials {
+  font-size: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tel {
+  justify-content: center;
+  cursor: pointer;
+}
+
+#logo {
+  font-family: "Lora", serif;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+nav {
+  background-color: black;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  background-color: transparent;
+  color: rgb(218, 216, 216);
+  font-size: 20px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-right: 1px solid rgb(75, 74, 74);
+  padding-right: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login ion-icon {
+  color: #c95e00;
+  font-size: 32px;
+}
+
+#cartLogo {
+  color: #c95e00;
+}
+
+#header-photo {
+  height: 450px;
+}
+
+.header-1 h2,
+.sales-text h2,
+#email-container h2,
+#download h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: capitalize;
+}
+
+.header-1 p,
+.sales-text p,
+#email-container p,
+#download p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 50px;
+  color: gray;
+}
+#btn-shop {
+  background-color: #c95e00;
+}
+#btn-shop a {
+  color: white;
+  text-decoration: none;
+}
+
+#btn-shop:hover {
+  background-color: white;
+  outline: 1px solid #c95e00;
+}
+
+#btn-shop a:hover {
+  color: #111;
+}
+
+.header-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sales {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.sales-img {
+  position: relative;
+}
+
+.sales-img::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  top: -9%;
+  left: -4%;
+  background-color: #c95e00;
+  z-index: -1;
+}
+
+#sales img:nth-child(1) {
+  width: 450px;
+}
+
+.sales-text img {
+  width: 200px;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 70px;
+  grid-column-gap: 150px;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: white;
+}
+
+.menu-item::before {
+  position: absolute;
+  content: "";
+  left: -2%;
+  bottom: -2%;
+  width: 20%;
+  height: 20%;
+  background-color: #e9e6e6;
+  z-index: -1;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.item-info p {
+  color: gray;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item-name {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+.price {
+  color: #f77606;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.cart-btn {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto;
+  outline: 1px solid #c95e00;
+  color: #c95e00;
+  border: none;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: #c95e00;
+  color: #fff;
+}
+
+.main-section img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#download {
+  text-transform: capitalize;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#logo-2 {
+  font-family: "Lora", serif;
+  font-size: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+#download a {
+  border: 1px solid gray;
+  padding: 8px 13px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#download a:hover {
+  background-color: #c95e00;
+  color: #fff;
+}
+
+#download ion-icon {
+  font-size: 25px;
+  padding-right: 6px;
+}
+
+#email-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#email-container-text {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#email-container h2,
+#download h3 {
+  font-size: 30px;
+}
+
+#email {
+  width: 50%;
+  height: 46px;
+  font-size: 20px;
+  outline: none;
+}
+
+#submit-btn {
+  background-color: #111;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 7px 10px;
+  transform: translateX(-5px);
+}
+
+#logo-2,
+#download h3,
+#download p {
+  color: #fff;
+}
+
+#download {
+  background-image: linear-gradient(to right, #1414147e, #1414145b),
+    url(img/download-img.jpg);
+}
+
+#download a {
+  background-color: #c95e00;
+  color: white;
+}
+
+#download a ion-icon {
+  transform: translateY(6px);
+}
+
+@media (max-width: 1190px) {
+  .main-section {
+    grid-template-columns: 400px 400px;
+  }
+}
+
+@media (max-width: 710px) {
+  .country,
+  #logo,
+  .socials,
+  #back {
+    font-size: 15px;
+  }
+  button {
+    font-size: 15px;
+  }
+
+  .login ion-icon {
+    font-size: 18px;
+  }
+  .header-1 h2 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+
+  #sales {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .sales-img {
+    margin-bottom: 50px;
+  }
+
+  #sales img:nth-child(1) {
+    width: 350px;
+  }
+
+  .sales-text img {
+    width: 150px;
+  }
+
+  .main-section {
+    grid-template-columns: 300px;
+    grid-gap: 90px;
+    grid-column-gap: 90px;
+  }
+}
+
+@media (max-width: 375px) {
+  .login {
+    border-top: 1px solid rgb(75, 74, 74);
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  #download h3 {
+    font-size: 25px;
+  }
+}

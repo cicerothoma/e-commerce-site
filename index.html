@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row border-bottom">
+        <div class="col country border-right">
+          <h4 class="text-secondary">Nigeria</h4>
+        </div>
+
+        <div class="col socials border-right">
+          <ion-icon class="pr-3" name="logo-twitter"></ion-icon>
+          <ion-icon class="pr-3" name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+
+        <div class="col tel d-none d-md-block">
+          <p><ion-icon name="call-sharp"></ion-icon> +234 8110 5655 00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row mt-3 mb-3">
+        <div class="col">
+          <h1 id="logo" class="pl-4">W & L Liquor Shop</h1>
+        </div>
+
+        <div class="col"></div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="sticky-top pt-1 pb-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 btn-container">
+            <!-- ADDED WITH JAVASCRIPT -->
+          </div>
+
+          <div class="col-12 col-sm-6 login">
+            <button>contact us</button>
+            <button>login</button>
+            <button>
+              <a href="./cart.html">
+                <ion-icon name="cart"></ion-icon><span id="cartLogo">0</span>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col header-1">
+          <h2>No. 1 Liquor Store.</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            debitis placeat labore inventore vero nulla delectus voluptate
+          </p>
+
+          <button class="pt-2 pb-2 px-3 mt-3" id="btn-shop">
+            <a href="#">shop now</a>
+          </button>
+        </div>
+
+        <div class="col-6 header-2 d-none d-md-block p-3">
+          <img
+            src="img/header-photo.jpg"
+            class="img-fluid"
+            alt="Responsive image"
+            id="header-photo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- SALES -->
+    <section class="container" id="sales">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12 col-md-6 sales-img">
+          <img
+            src="img/sales-img.jpg"
+            class="img-fluid"
+            alt="Responsive image"
+          />
+        </div>
+
+        <div class="col-12 col-md-6 sales-text">
+          <h2>SALES</h2>
+          <p>
+            Bacon ipsum dolor amet ribeye pig beef ribs short loin fatback pork
+            loin. Kevin capicola flank ham hock biltong. Jerky beef beef ribs,
+            ball tip pork chop pastrami strip steak capicola jowl short loin
+            sausage kevin t-bone turkey.
+          </p>
+
+          <img src="img/sales-tag.png" />
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="container-fluid main-section">
+      <!-- ADDED WITH JAVASCRIPT -->
+    </section>
+
+    <!-- EMAIL -->
+    <section class="container" id="email-container">
+      <div class="row">
+        <div class="col-12 col-md-6 pt-5 pb-5" id="email-container-text">
+          <h2>subscribe to our news letter</h2>
+
+          <p>to get exciting deals, updates and more</p>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="&#128231;  E-Mail "
+          />
+          <button for="email" id="submit-btn">SEND</button>
+        </div>
+
+        <div class="col-12 col-md-6"></div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="container-fluid" id="download">
+      <div class="row">
+        <div class="col-12 col-md-6 pt-5 pb-5">
+          <h1 id="logo-2" class="text-center">W & L Liquor Shop</h1>
+        </div>
+
+        <div class="col-12 col-md-6 pt-5 pb-5 text-center">
+          <h3>download our app for free</h3>
+          <p>get exclusive offers and deals of the day</p>
+
+          <a> <ion-icon name="logo-apple-appstore"></ion-icon> App Store</a>
+          <a> <ion-icon name="logo-google-playstore"></ion-icon>Google Play</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- <a href="https://www.freepik.com/psd/mockup">Mockup psd created by pmvchamara - www.freepik.com</a> -->
+<!-- <a href='https://www.freepik.com/psd/mockup'>Mockup psd created by pmvchamara - www.freepik.com</a> -->
