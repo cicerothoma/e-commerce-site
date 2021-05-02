@@ -253,32 +253,34 @@ function displayCart() {
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += `
       <div class="product-item">
-
-          <div class="product">
-            <img src="${item.img}" />
-          </div>
+        <div class="product-1">
+          <img src=${item.img} />
 
           <div class="product-detail">
             <h2 class="item-name">${item.title}</h2>
-
-            <div class="price">&#8358;${item.price}.00</div>
-
-            <div class="quantity">
-              <ion-icon class="increase" name="add-circle-outline"></ion-icon>
-              <span>${item.inCart}</span>
-              <ion-icon
-                class="decrease"
-                name="remove-circle-outline"
-              ></ion-icon>
-            </div>
+            <p>${item.desc}</p>
           </div>
-       </div>
+        </div>
+
+        <div class="product-2 mt-4">
+          <p class="price">&#8358;${item.price}.00</p>
+
+          <div class="quantity">
+            <ion-icon class="increase" name="add-circle-outline"></ion-icon>
+            <p>2</p>
+            <ion-icon
+              class="decrease"
+              name="remove-circle-outline"
+            ></ion-icon>
+          </div>
+        </div>
+    </div>
         `;
     });
 
     productContainer.innerHTML += `
       <div class="basketTotal">
-        <h2 ><span> Total: </span>&#8358;${cartCost}.00</h2>
+        <h4><span> Total: </span>&#8358;${cartCost}.00</h4>
       </div>
       `;
   }
