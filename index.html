@@ -35,32 +35,53 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row mt-3 mb-3">
-        <div class="col">
-          <h1 id="logo" class="pl-4">W & L Liquor Shop</h1>
+    <div class="container-fluid name">
+      <div class="row">
+        <div class="col-6 pt-3 pb-3">
+          <h1 id="logo">W & L Liquor Shop</h1>
         </div>
 
-        <div class="col"></div>
+        <div class="col-6 login">
+          <ion-icon name="person-outline"></ion-icon>
+
+          <ion-icon name="heart-outline"></ion-icon>
+
+          <a href="./cart.html" class="cart-icon">
+            <ion-icon name="cart"></ion-icon>
+            <!-- <span id="cartLogo">0</span> -->
+          </a>
+        </div>
       </div>
     </div>
 
     <!-- NAVIGATION -->
-    <nav class="sticky-top pt-1 pb-1">
+    <nav class="sticky-top p1-3 pb-1">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-6 btn-container">
-            <!-- ADDED WITH JAVASCRIPT -->
-          </div>
+          <div class="col-12 navigation">
+            <div class="div btn-container">
+              <button class="filter-btn" type="button" data-id="${category}">
+                all
+              </button>
+              <button class="filter-btn" type="button" data-id="${category}">
+                Beer
+              </button>
+              <button class="filter-btn" type="button" data-id="${category}">
+                Whiskey
+              </button>
+              <button class="filter-btn" type="button" data-id="${category}">
+                wine
+              </button>
+            </div>
 
-          <div class="col-12 col-sm-6 login">
-            <button>contact us</button>
-            <button>login</button>
-            <button>
-              <a href="./cart.html">
-                <ion-icon name="cart"></ion-icon><span id="cartLogo">0</span>
-              </a>
-            </button>
+            <div class="div">
+              <!-- <button>login</button>
+              <button>
+                <a href="./cart.html">
+                  <ion-icon name="cart"></ion-icon><span id="cartLogo">0</span>
+                </a>
+              </button> -->
+            </div>
           </div>
         </div>
       </div>
@@ -161,17 +182,19 @@
     </section>
 
     <!-- FOOTER -->
-    <section class="container-fluid pt-5 pb-5" id="footer">
+    <section class="container-fluid pt-5 pb-2" id="footer">
       <div class="row justify-content-center">
         <div class="col-12 col-md-4">
           <h4>Helpful Links</h4>
-          <p>About Us</p>
-          <p>Help Center</p>
-          <p>complaints</p>
-          <p>privacy and policy</p>
+          <div class="links">
+            <a href="#">About us</a>
+            <a href="#">help center</a>
+            <a href="#">complaints</a>
+            <a href="#">privacy policy</a>
+          </div>
         </div>
 
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 join">
           <h4>Join Us On</h4>
           <ion-icon name="logo-facebook"></ion-icon>
           <ion-icon name="logo-twitter"></ion-icon>

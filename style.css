@@ -19,47 +19,68 @@
   cursor: pointer;
 }
 
+.name {
+  background-color: black;
+}
+
 #logo {
   font-family: "Lora", serif;
   font-size: 30px;
   cursor: pointer;
-  color: black;
-}
-
-nav {
-  background-color: black;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-button {
-  background-color: transparent;
-  color: rgb(218, 216, 216);
-  font-size: 20px;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  cursor: pointer;
-  border-right: 1px solid rgb(75, 74, 74);
-  padding-right: 10px;
+  color: rgb(255, 255, 255);
+  padding-left: 60px;
 }
 
 .login {
+  color: white;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .login ion-icon {
-  color: #c95e00;
-  font-size: 32px;
+  font-size: 30px;
+  margin-right: 20px;
+  font-weight: 900;
+  cursor: pointer;
 }
 
-#cartLogo {
-  color: #c95e00;
+.login a {
+  color: white;
+}
+
+.cart-icon {
+  transform: translateY(3px);
+}
+
+nav {
+  background-color: teal;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation > div:nth-child(1) {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation button {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  border: none;
+  background-color: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  outline: none;
+  cursor: pointer;
+}
+
+.navigation button:hover {
+  background-color: rgb(2, 87, 87);
 }
 
 #header-photo {
@@ -151,17 +172,6 @@ button {
   background-color: white;
 }
 
-.menu-item::before {
-  position: absolute;
-  content: "";
-  left: -2%;
-  bottom: -2%;
-  width: 20%;
-  height: 20%;
-  background-color: #e9e6e6;
-  z-index: -1;
-}
-
 .item-info {
   display: flex;
   flex-direction: column;
@@ -213,7 +223,6 @@ button {
 #download {
   text-transform: capitalize;
   margin-top: 100px;
-  margin-bottom: 20px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
@@ -299,16 +308,26 @@ button {
 }
 
 #footer h4 {
+  color: rgb(214, 212, 212);
   font-size: 20px;
   font-family: "Lora", serif;
+  margin-bottom: 20px;
 }
 
-#footer p {
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  color: rgb(170, 170, 170);
+  text-decoration: none;
+  outline: none;
+  display: inline;
   text-transform: capitalize;
-  cursor: pointer;
 }
 
-#footer p:hover,
+.links a:hover,
 #footer ion-icon:hover {
   color: rgb(236, 233, 233);
   font-weight: 700;
@@ -330,22 +349,40 @@ button {
   }
 }
 
+@media (max-width: 768px) {
+  .main-section {
+    grid-template-columns: 250px 250px;
+  }
+}
+
 @media (max-width: 710px) {
-  .country,
-  #logo,
+  .country h4,
   .socials,
   #back {
     font-size: 15px;
   }
-  button {
-    font-size: 15px;
+
+  #logo {
+    padding-left: 0px;
+    font-size: 17px;
   }
 
   .login ion-icon {
-    font-size: 18px;
+    font-size: 20px;
+    transform: translateX(30px);
   }
+
+  .links,
+  .join {
+    margin-bottom: 30px;
+  }
+
+  #sales img:nth-child(1) {
+    width: 280px;
+  }
+
   .header-1 h2 {
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 20px;
   }
 
@@ -358,27 +395,23 @@ button {
     margin-bottom: 50px;
   }
 
-  #sales img:nth-child(1) {
-    width: 350px;
-  }
-
   .sales-text img {
     width: 120px;
   }
 
   .main-section {
-    grid-template-columns: 300px;
+    grid-template-columns: 250px;
     grid-gap: 90px;
     grid-column-gap: 90px;
   }
-}
-
-@media (max-width: 375px) {
-  .login {
-    border-top: 1px solid rgb(75, 74, 74);
-    margin-top: 15px;
-    padding-top: 15px;
+  .menu-item {
+    transform: translateX(-40px);
   }
+
+  .sales-text {
+    margin-top: 50px;
+  }
+
   .item-name {
     font-size: 18px;
   }

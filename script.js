@@ -95,10 +95,10 @@ const menu = [
 
   {
     id: 11,
-    title: "Bench Creek",
+    title: "Carlsberg",
     price: 1500,
     category: "beer",
-    img: "img/bench.png",
+    img: "img/carlsbergs.png",
     desc: "Lorem ipsum dolor, sit amet consectetur",
     inCart: 0,
   },
@@ -287,47 +287,47 @@ function displayCart() {
 }
 
 //FUNCTION TO DISPLAY FILTER BUTTONS
-function displayMenuButtons() {
-  const categories = menu.reduce(
-    function (values, item) {
-      if (!values.includes(item.category)) {
-        values.push(item.category);
-      }
-      return values;
-    },
-    ["all"]
-  );
+// function displayMenuButtons() {
+//   const categories = menu.reduce(
+//     function (values, item) {
+//       if (!values.includes(item.category)) {
+//         values.push(item.category);
+//       }
+//       return values;
+//     },
+//     ["all"]
+//   );
 
-  const categoryBtns = categories
-    .map(function (category) {
-      return `
-        <button class="filter-btn" type="button" data-id="${category}">${category}</button>
-      `;
-    })
-    .join("");
+//   const categoryBtns = categories
+//     .map(function (category) {
+//       return `
+//         <button class="filter-btn" type="button" data-id="${category}">${category}</button>
+//       `;
+//     })
+//     .join("");
 
-  btnContainer.innerHTML = categoryBtns;
-  const filterBtns = document.querySelectorAll(".filter-btn");
+//   btnContainer.innerHTML = categoryBtns;
+//   const filterBtns = document.querySelectorAll(".filter-btn");
 
-  // FILTER FUNCTION
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
-      const category = e.currentTarget.dataset.id;
-      const menuCategory = menu.filter(function (menuItem) {
-        // console.log(menuItem.category);
-        if (menuItem.category === category) {
-          return menuItem;
-        }
-      });
-      // console.log(menuCategory)
-      if (category === "all") {
-        displayMenuItems(menu);
-      } else {
-        displayMenuItems(menuCategory);
-      }
-    });
-  });
-}
+//   // FILTER FUNCTION
+//   filterBtns.forEach(function (btn) {
+//     btn.addEventListener("click", function (e) {
+//       const category = e.currentTarget.dataset.id;
+//       const menuCategory = menu.filter(function (menuItem) {
+//         // console.log(menuItem.category);
+//         if (menuItem.category === category) {
+//           return menuItem;
+//         }
+//       });
+//       // console.log(menuCategory)
+//       if (category === "all") {
+//         displayMenuItems(menu);
+//       } else {
+//         displayMenuItems(menuCategory);
+//       }
+//     });
+//   });
+// }
 
 displayCart();
 onLoadCartNumbers();
