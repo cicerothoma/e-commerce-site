@@ -292,8 +292,9 @@ function displayCart() {
       console.log(element);
       console.log(element.addEventListener);
 
-      element.addEventListener("click", function () {
-        console.log(e);
+      element.addEventListener("click", (e) => {
+        console.log(e)
+        console.log('see if it works')
       });
     });
 
